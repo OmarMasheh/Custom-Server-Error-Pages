@@ -1,0 +1,89 @@
+Custom Server Error Pages: install.txt
+Contribution Author: Everett Myers
+
+If you like this contribution please donate to the osCommerce core team at 
+ http://www.oscommerce.com/about/team 
+Without their incredible work, I wouldn't have been able to build on such
+a strong foundation.  Thank you!
+
+This software is licensed under the Gnu Public License, which can be found 
+here and is incorporated herein by reference: 
+
+-----------------------------------------------------------------------------
+HOW TO INSTALL:
+-----------------------------------------------------------------------------
+
+For the purposes of this installation I will be showing you how to add them 
+for Apache Web Server using .htaccess file.
+
+=============================================================================
+CATALOG INSTALL
+=============================================================================
+-----------------------------------------------------------------------------
+Install
+-----------------------------------------------------------------------------
+just copy the following files into your 
+catalog directories.
+/catalog/templates/override/includes/pages
+/catalog/server_error.php
+/catalog/includes/languages/english/server_error.php
+
+you can copy the english/server_error.php to all the other languages you have or if you decide to 
+translate the text for all the different error codes.
+
+=============================================================================
+SERVER (.htaccess) INSTALL
+=============================================================================
+Dependent on your server settings and OS you may have to disable some. To do 
+this, place a "#" in front of the line you want to remove. I have removed 
+some of the ones below that sometime cause problems.
+
+
+create or open the file on your web root and name it 
+
+.htaccess
+
+input the following text at the end of the file.
+
+#START Custom Server Error Pages
+#START Custom Server Error Pages
+#ErrorDocument 400 /catalog/server_error.php?id=400
+#ErrorDocument 401 /catalog/server_error.php?id=401
+#ErrorDocument 402 /catalog/server_error.php?id=402
+#ErrorDocument 403 /catalog/server_error.php?id=403
+ErrorDocument 404 /catalog/server_error.php?id=404
+ErrorDocument 405 /catalog/server_error.php?id=405
+ErrorDocument 406 /catalog/server_error.php?id=406
+ErrorDocument 407 /catalog/server_error.php?id=407
+ErrorDocument 408 /catalog/server_error.php?id=408
+ErrorDocument 409 /catalog/server_error.php?id=409
+ErrorDocument 410 /catalog/server_error.php?id=410
+ErrorDocument 411 /catalog/server_error.php?id=411
+ErrorDocument 412 /catalog/server_error.php?id=412
+ErrorDocument 413 /catalog/server_error.php?id=413
+ErrorDocument 414 /catalog/server_error.php?id=414
+ErrorDocument 415 /catalog/server_error.php?id=415
+ErrorDocument 416 /catalog/server_error.php?id=416
+ErrorDocument 417 /catalog/server_error.php?id=417
+ErrorDocument 421 /catalog/server_error.php?id=421
+ErrorDocument 422 /catalog/server_error.php?id=422
+ErrorDocument 423 /catalog/server_error.php?id=423
+ErrorDocument 424 /catalog/server_error.php?id=424
+#ErrorDocument 425 /catalog/server_error.php?id=425
+#ErrorDocument 426 /catalog/server_error.php?id=426
+#ErrorDocument 449 /catalog/server_error.php?id=449
+#ErrorDocument 500 /catalog/server_error.php?id=500
+#ErrorDocument 501 /catalog/server_error.php?id=501
+#ErrorDocument 502 /catalog/server_error.php?id=502
+#ErrorDocument 503 /catalog/server_error.php?id=503
+#ErrorDocument 504 /catalog/server_error.php?id=504
+#ErrorDocument 505 /catalog/server_error.php?id=505
+#ErrorDocument 506 /catalog/server_error.php?id=506
+#ErrorDocument 507 /catalog/server_error.php?id=507
+#ErrorDocument 508 /catalog/server_error.php?id=508
+#ErrorDocument 509 /catalog/server_error.php?id=509
+#ErrorDocument 510 /catalog/server_error.php?id=510
+#END Custom Server Error Pages
+
+
+
