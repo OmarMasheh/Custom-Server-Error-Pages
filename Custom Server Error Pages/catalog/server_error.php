@@ -1,13 +1,11 @@
 <?php
 /*
-  $server_error_id: server_error.php ver1.0.0 2008-04-09 $
-
-  osCommerce, Open Source E-Commerce Solutions
-  http://www.oscommerce.com
-
-  Copyright (c) 2003 osCommerce
-
+  $Id$
+  CE Phoenix, E-Commerce made Easy
+  https://phoenixcart.org
+  Copyright (c) 2021 Phoenix Cart
   Released under the GNU General Public License
+  author Jack_mcs
 */
 
 
