@@ -1,5 +1,13 @@
 <?php
 
+/*
+  $Id$
+  CE Phoenix, E-Commerce made Easy
+  https://phoenixcart.org
+  Copyright (c) 2021 Phoenix Cart
+  Released under the GNU General Public License
+  author Jack_mcs
+*/
 
   require $oscTemplate->map_to_template('template_top.php', 'component');
 
